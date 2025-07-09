@@ -1,0 +1,149 @@
+body {
+    font-family: 'Press Start 2P', 'FiraCode Nerd Font', monospace;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #e0f7fa;
+    background-color: #0a0f1e;
+    background-image: radial-gradient(circle at center, #1e293b, #0a0f1e);
+}
+h1 {
+    margin: 0 auto 10px auto;
+    color: #e0f7fa;
+    text-shadow: 1px 1px 0px #000;
+    font-size: 1.%;
+}
+
+p {
+    margin: 0;
+}
+
+.app-message {
+    height: 20px;
+    margin: 10px auto 20px auto;
+    font-size: 0.75rem;
+    color: #b3e5fc;
+    text-shadow: 1px 1px #000;
+}
+
+.app-message.flashing {
+    animation: arcade-flash 1s infinite;
+}
+
+@keyframes arcade-flash {
+    0%, 50% {
+        opacity: 1;
+        color: #81d4fa;
+        text-shadow: 0 0 5px #81d4fa, 1px 1px #000;
+    }
+    51%, 100% {
+        opacity: 0.3;
+        color: #b3e5fc;
+        text-shadow: 1px 1px #000;
+    }
+}
+
+.app-container {
+    width: 320px;
+    height: 500px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 24px;
+}
+
+.app-circle {
+    position: relative;
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+}
+
+.circle-shape {
+    pointer-events: none;
+}
+
+.semi-circle {
+    position: absolute;
+    width: 120px;
+    height: 240px;
+    box-sizing: border-box;
+    border: solid 6px;
+}
+
+.left-side {
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    transform: rotate(0deg);
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    border-right: none;
+    z-index: 1;
+}
+
+.right-side {
+    top: 0;
+    left: 120px;
+    transform-origin: left center;
+    transform: rotate(0deg);
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-left: none;
+}
+.circle {
+    border-color: #81d4fa;
+}
+
+.circle-mask {
+    border-color: #81d4fa;
+}
+
+.app-counter-box {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+    color: #e0f7fa;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.circle-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    padding: 10px 16px;
+    color: #e0f7fa;
+    font-family: 'Press Start 2P', 'FiraCode Nerd Font', monospace;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #000;
+    transition: all 0.2s ease;
+}
+button:hover {
+    color: #81d4fa;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    padding: 1.5rem;
+}
