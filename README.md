@@ -47,3 +47,7 @@ cd pomodoro
 Simply open index.html in your browser.
 
 No installation or build process needed. It’s just HTML + CSS + JS.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
