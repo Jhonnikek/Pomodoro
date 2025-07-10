@@ -1,6 +1,8 @@
-# ⏱ Pomodoro App
+#  Pomodoro App
 
-A simple **Pomodoro** app developed with **pure HTML, CSS, and JavaScript**. Designed to help you manage your time and boost your productivity using the Pomodoro technique.
+[**Live Demo**](https://jhonnikek.github.io/pomodoro/) 
+
+A simple [Pomodoro](https://www.todoist.com/es/productivity-methods/pomodoro-technique) app developed with **pure HTML, CSS, and JavaScript**. Designed to help you manage your time and boost your productivity using the Pomodoro technique.
 
 ## What is the Pomodoro Technique?
 
@@ -11,8 +13,8 @@ The Pomodoro Technique consists of dividing your work time into blocks of 25 min
 ##  Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript  
-- ✅ No frameworks or libraries used  
-- ❌ No build tools or dependencies  
+-  No frameworks or libraries used  
+-  No build tools or dependencies  
 
 ---
 
